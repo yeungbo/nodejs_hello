@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nodeapptest-service
+  labels:
+    app: nodeapptest
+spec:
+  type: NodePort
+  ports:
+   - protocol: TCP
+     port: 8888
+     nodePort: 30040
+  selector:
+    name: nodeapp
+    version: "ENV_NAME"
