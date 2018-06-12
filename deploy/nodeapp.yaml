@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: nodeapp-ENV_NAME
-        image: registry.ng.bluemix.net/bo_namespace/mynodeapp:ENV_NAME
+        image: registry.ng.bluemix.net/bo_namespace/mynodeapp:VERSION
         ports:
         - containerPort: 8888
 
