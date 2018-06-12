@@ -1,10 +1,14 @@
 FROM node
 
-MAINTAINER Bo <yeungbo@gmail.com>
+MAINTAINER Bo <yangbbo@cn.ibm.com>
 
+# Create app directory
+RUN mkdir -p /home/Service
+WORKDIR /home/Service
 
-WORKDIR /home/project
+# Bundle app source
+COPY . /home/Service
+RUN npm install
 
-EXPOSE 3000
-
-CMD ["npm","start"]
+EXPOSE 8888
+CMD [ "npm", "start" ]

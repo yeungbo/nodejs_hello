@@ -1,2 +1,2 @@
 #HelloWorld_Node
-A sample nodejs application for docker deployment test
+A simple nodejs application for docker blue-green deployment POC
