@@ -1,0 +1,19 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: nodeapp-ENV_NAME
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: nodeapp-ENV_NAME
+        name: nodeapp
+        version: "ENV_NAME"
+    spec:
+      containers:
+      - name: nodeapp-ENV_NAME
+        image: registry.ng.bluemix.net/bo_namespace/mynodeapp:ENV_NAME
+        ports:
+        - containerPort: 8888
+
