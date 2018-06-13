@@ -4,7 +4,7 @@ metadata:
   name: nodeapp-default
 spec:
   destination:
-    name: bg-internal-istio
+    name: bg-service-istio
   precedence: 1
   route:
   - labels:
