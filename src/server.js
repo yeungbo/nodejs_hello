@@ -6,7 +6,7 @@ var PORT = 8888;
 
 var app = express();
 app.get('/', function (req, res) {
-  res.send('Hello World - This is new blue-green Version\n');
+  res.send('Hello World - This is new green1 Version\n');
 });
 
 app.listen(PORT);
