@@ -1,12 +1,12 @@
 apiVersion: config.istio.io/v1alpha2
 kind: RouteRule
 metadata:
-  name: nodeapp-default
+  name: nodeapp-green
 spec:
   destination:
     name: bg-service-istio
   precedence: 1
   route:
   - labels:
-      version: VERSION
+      version: "VERSION"
 
