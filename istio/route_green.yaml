@@ -8,6 +8,6 @@ spec:
   precedence: 1
   route:
   - labels:
-      version: "VERSION"
+      version: vVERSION
     weight: 100
 

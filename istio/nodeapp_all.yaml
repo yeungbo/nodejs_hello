@@ -8,7 +8,7 @@ spec:
     metadata:
       labels:
         app: nodeapp
-        version: "VERSION"
+        version: vVERSION
     spec:
       containers:
       - name: nodeapp
@@ -21,7 +21,7 @@ kind: Service
 metadata:
   name: bg-service-istio
   labels:
-    app: bg-service-istio
+    app: nodeapp
 spec:
   type: NodePort
   ports:
@@ -36,7 +36,7 @@ kind: Service
 metadata:
   name: bg-internal-istio
   labels:
-    app: bg-internal-istio
+    app: nodeapp
 spec:
   type: NodePort
   ports:
