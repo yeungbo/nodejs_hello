@@ -4,10 +4,10 @@ metadata:
   name: nodeapp-green
 spec:
   destination:
-    name: bg-service-istio
+    name: bg-green-istio
   precedence: 1
   route:
   - labels:
-      version: vVERSION
+      version: green
     weight: 100
 

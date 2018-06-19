@@ -19,9 +19,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: bg-service-istio
+  name: bg-blue-istio
   labels:
     app: nodeapp
+    tag: blue
 spec:
   type: NodePort
   ports:
@@ -34,9 +35,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: bg-internal-istio
+  name: bg-green-istio
   labels:
     app: nodeapp
+    tag: green
 spec:
   type: NodePort
   ports:

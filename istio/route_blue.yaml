@@ -4,10 +4,10 @@ metadata:
   name: nodeapp-blue
 spec:
   destination:
-    name: bg-internal-istio
+    name: bg-blue-istio
   precedence: 1
   route:
   - labels:
-      version: vVERSION
+      tag: blue
     weight: 100
 
