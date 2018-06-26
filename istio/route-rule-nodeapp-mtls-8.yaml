@@ -1,0 +1,23 @@
+---
+kind: DestinationRule
+metadata:
+  name: nodeapp
+spec:
+  host: nodeapp
+  trafficPolicy:
+    tls:
+      mode: ISTIO_MUTUAL
+  subsets:
+  - name: blue
+    labels:
+      version: vBLUEVERSION
+  - name: green
+    labels:
+      version: vGREENVERSION
+  - name: red
+    labels:
+      tag: red
+  - name: black
+    labels:
+      tag: black
+---
