@@ -28,7 +28,7 @@ spec:
   http:
   - match:
     - uri:
-        prefix: /blue
+        prefix: /nodeapp/blue
     rewrite:
       uri: "/"
     route:
@@ -39,7 +39,7 @@ spec:
         subset: blue
   - match:
     - uri:
-        prefix: /green
+        prefix: /nodeapp/green
     rewrite:
       uri: "/"
     route:
