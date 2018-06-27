@@ -6,7 +6,7 @@ var PORT = 8888;
 
 var app = express();
 app.get('/', function (req, res) {
-  res.send('Hello World - This is a bug fix Version 09\n');
+  res.send('Hello World - This is a bug fix Version 10\n');
 });
 
 app.listen(PORT);
