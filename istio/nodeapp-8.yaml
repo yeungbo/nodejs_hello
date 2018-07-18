@@ -26,7 +26,8 @@ spec:
     spec:
       containers:
       - name: nodeapp
-        image: registry.ng.bluemix.net/bo_namespace/mynodeapp:VERSION
+   #    image: registry.ng.bluemix.net/bo_namespace/mynodeapp:VERSION
+        image: registry.ng.bluemix.net/wp4h_istio_demo/mynodeapp:VERSION
    #     imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8888
