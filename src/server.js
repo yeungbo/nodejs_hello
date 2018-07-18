@@ -6,7 +6,7 @@ var PORT = 8888;
 
 var app = express();
 app.get('/', function (req, res) {
-  res.send('Hello World SDT - This is demo Version aaa\n');
+  res.send('Hello World SDT - This is demo Version bbb\n');
 });
 
 app.listen(PORT);
