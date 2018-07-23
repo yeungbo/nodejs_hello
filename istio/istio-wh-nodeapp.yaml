@@ -1,0 +1,31 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: SERVICENAME
+  labels:
+    app: SERVICENAME
+spec:
+  ports:
+  - port: SERVICEPORT
+    name: http
+  selector:
+    app: SERVICENAME
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: SERVICENAME-vVERSION
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: SERVICENAME
+        version: vVERSION
+        tag: blue
+    spec:
+      containers:
+      - name: SERVICENAME
+        image: registry.ng.bluemix.net/wp4h_istio_demo/IMAGENAME:VERSION
+        ports:
+        - containerPort: SERVICEPORT
