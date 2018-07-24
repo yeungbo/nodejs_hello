@@ -1,9 +1,9 @@
 ---
 kind: DestinationRule
 metadata:
-  name: nodeapp
+  name: SERVICENAME
 spec:
-  host: nodeapp
+  host: SERVICENAME
   trafficPolicy:
     tls:
       mode: ISTIO_MUTUAL
@@ -14,10 +14,4 @@ spec:
   - name: green
     labels:
       version: vGREENVERSION
-  - name: red
-    labels:
-      tag: red
-  - name: black
-    labels:
-      tag: black
 ---
