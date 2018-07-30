@@ -10,5 +10,5 @@ WORKDIR /home/Service
 COPY . /home/Service
 RUN npm install
 
-EXPOSE 8888
+#EXPOSE 8888
 CMD [ "npm", "start" ]
